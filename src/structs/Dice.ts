@@ -35,7 +35,7 @@ export class Dice {
     switch (modifier.advantage) {
       default:
         const result = rollDice()
-        return result + modifiers;
+        return result > 1 ? result + modifiers : 1
       case 1:
         let advantages: number[] = []
 
@@ -43,7 +43,7 @@ export class Dice {
           advantages.push(rollDice())
 
         advantages.sort((a, b) => b - a)
-        return advantages[0] + modifiers
+        return advantages[0] > 1 ? advantages[0] + modifiers : 1
       case 2:
         let disadvantages: number[] = []
 
@@ -51,7 +51,7 @@ export class Dice {
           disadvantages.push(rollDice())
 
         disadvantages.sort((a, b) => a - b)
-        return disadvantages[0] + modifiers
+        return disadvantages[0] > 1 ? disadvantages[0] + modifiers : 1
     }
   }
 }
