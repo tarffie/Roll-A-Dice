@@ -1,0 +1,46 @@
+{
+  "name": "roll-a-dice",
+  "version": "1.0.0",
+  "description": "dice rolling library for general use ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch src/index.ts",
+    "lint": "eslint .",
+    "start": "node dist/index.js",
+    "build": "mkdir -p dist && tsc && tsc-alias"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.8.0",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^20.14.14",
+    "eslint": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
+    "prettier": "^3.3.3",
+    "tsc-alias": "^1.8.10",
+    "typescript": "^5.5.4"
+  },
+  "type": "module",
+  "dependencies": {
+    "tsx": "^4.16.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarffie/Roll-A-Dice.git"
+  },
+  "keywords": [
+    "dice",
+    "rpg",
+    "die",
+    "rolling",
+    "rng"
+  ],
+  "author": "Emilia \"Tarffie\" Alves",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/tarffie/Roll-A-Dice/issues"
+  },
+  "homepage": "https://github.com/tarffie/Roll-A-Dice#readme"
+}

@@ -1,0 +1,30 @@
+{
+	"compilerOptions": {
+	  "target": "ESNext",
+	  "module": "es2022",
+	  "baseUrl": ".",
+	  "paths": {
+		"@*": ["src/*"]
+	  },
+	  "moduleResolution": "Node",
+	  "outDir": "dist",
+	  "importsNotUsedAsValues": "remove",
+	  "strict": true,
+	  "noImplicitThis": true,
+	  "alwaysStrict": true,
+	  "strictNullChecks": true,
+	  "strictFunctionTypes": true,
+	  "strictBindCallApply": true,
+	  "strictPropertyInitialization": true,
+	  "noImplicitReturns": true,
+	  "noUnusedLocals": true,
+	  "noUnusedParameters": true,
+	  "noFallthroughCasesInSwitch": true,
+	  "esModuleInterop": true,
+	  "skipLibCheck": true,
+	  "forceConsistentCasingInFileNames": true,
+	  "noImplicitAny": true,
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules"]
+  }
